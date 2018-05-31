@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'make'    
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'make check||true'    
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'make publish'   
+            }
+        }
+    }
+}
