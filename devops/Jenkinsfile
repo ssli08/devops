@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                echo 'make check||true'    
+                echo 'make check||true||False'    
             }
         }
         stage('deploy') {
